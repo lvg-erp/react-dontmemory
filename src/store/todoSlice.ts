@@ -20,9 +20,7 @@ export const fetchTodos = createAsyncThunk<Todo[], undefined, {rejectValue: stri
             return rejectWithValue('Server Error!');
         }
 
-        const data = await response.json();
-
-        return data;
+        return await response.json();
     }
 );
 
