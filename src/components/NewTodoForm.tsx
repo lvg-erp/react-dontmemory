@@ -14,7 +14,7 @@ const NewTodoForm: React.FC<NewTodoFormProps> = ({ value, updateText, handleActi
                 value={value}
                 onChange={(e) => updateText(e.target.value)}
             />
-            <button onClick={handleAction}>Add todo</button>
+            <button onClick={handleAction}>Add</button>
         </label>
     );
 };
