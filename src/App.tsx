@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
     const [text, setText] = useState('')
-    const { loading, error } = useAppSelector(state => state.todos);;
+    const { loading, error } = useAppSelector(state => state.todos)
     const dispatch = useAppDispatch();
 
     const handleAction = () => {
